@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="Personal portfolio showcasing creative development work and technical skills.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">PORTFOLIO<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="reveal"><span class="name-prefix">Hello, I'm</span> <br><span
+                            class="gradient-text">J.P.Dinith Harindra</span></h1>
+                    <p class="reveal">I'm a passionate <span class="highlight">Embedded Engineer</span> dedicated to
+                        bridging the gap between software and hardware through innovative solutions.</p>
+                    <div class="hero-btns reveal">
+                        <a href="cv.pdf" class="btn btn-primary" download>Download CV</a>
+                        <a href="https://linkedin.com/in/dinith-harindra" target="_blank"
+                            class="btn btn-secondary">LinkedIn Profile</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <div class="image-wrapper">
+                        <img src="IMG_6341.jpg" alt="J.P.Dinith Harindra Portrait">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="reveal">
+                    <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 800px; line-height: 1.8;">
+                        I am an Embedded Systems Engineer with a deep passion for designing efficient, reliable, and
+                        scalable hardware-software integrated systems. With expertise in microcontrollers, RTOS, and
+                        high-speed PCB design, I specialize in transforming conceptual hardware ideas into
+                        production-ready digital solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Technical Skills</h2>
+                <div class="skills-grid reveal">
+                    <div class="skill-category">
+                        <div class="skill-icon">🔌</div>
+                        <h3>Embedded Systems</h3>
+                        <ul class="skill-tags">
+                            <li>Microcontrollers (STM32, AVR, PIC)</li>
+                            <li>RTOS (FreeRTOS)</li>
+                            <li>Embedded C / C++</li>
+                            <li>Bare-metal Programming</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Hardare Design</h3>
+                        <ul class="skill-tags">
+                            <li>PCB Design (Altium, KiCad)</li>
+                            <li>Circuit Simulation</li>
+                            <li>Protocol Debugging (I2C, SPI, UART)</li>
+                            <li>FPGA (Verilog/VHDL)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Software & Tools</h3>
+                        <ul class="skill-tags">
+                            <li>Linux / Git</li>
+                            <li>Python / MATLAB</li>
+                            <li>Firmware Update (OTA)</li>
+                            <li>Unit Testing (Unity/CMock)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="project-1.png" alt="Embedded Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Embedded Systems</span>
+                            <h3>Smart Energy Meter</h3>
+                            <p>A real-time energy monitoring system based on STM32 with LoRaWAN connectivity.</p>
+                            <a href="#" class="project-link">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="project-2.png" alt="Robotics System">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Robotics</span>
+                            <h3>Autonomous Rover</h3>
+                            <p>Obstacle avoiding rover using ROS and Raspberry Pi for complex path planning.</p>
+                            <a href="#" class="project-link">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Research & Publications</h2>
+                <div class="research-container">
+                    <div class="research-item reveal">
+                        <div class="research-date">2024</div>
+                        <div class="research-content">
+                            <h3>Optimization of Low-Power IoT Nodes</h3>
+                            <p>Published in IEEE Xplore. Research focus on reducing sleep current consumption in
+                                battery-operated nodes.</p>
+                            <a href="#" class="btn-text">View Paper</a>
+                        </div>
+                    </div>
+                    <div class="research-item reveal">
+                        <div class="research-date">2023</div>
+                        <div class="research-content">
+                            <h3>AI at the Edge: Performance Analysis</h3>
+                            <p>Comparative study of running lightweight ML models on ARM Cortex-M4 vs M7 processors.</p>
+                            <a href="#" class="btn-text">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p>Have a project in mind? Let's talk about how I can help you bring it to life.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
