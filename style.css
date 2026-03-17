@@ -478,6 +478,44 @@ h1 {
     z-index: -1;
 }
 
+#typing-text::after {
+    content: '|';
+    margin-left: 5px;
+    color: var(--primary);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+#typing-text::after {
+    content: '|';
+    margin-left: 5px;
+    color: var(--primary);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-content p {
     font-size: 1.25rem;
     color: var(--text-muted);
@@ -724,6 +762,27 @@ h1 {
 .research-item:hover {
     border-color: var(--secondary);
     background: rgba(255, 255, 255, 0.05);
+}
+
+.research-content img {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: imageFloat 8s infinite ease-in-out;
+}
+
+.research-item:hover .research-content img {
+    transform: scale(1.05) rotate(2deg);
+}
+
+@keyframes imageFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-1deg);
+    }
 }
 
 .research-date {

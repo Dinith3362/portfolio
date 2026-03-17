@@ -31,7 +31,7 @@
 
     <nav id="navbar">
         <div class="container">
-            <a href="#" class="logo">PORTFOLIO<span>.</span></a>
+            <a href="#" class="logo">DH<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -48,10 +48,10 @@
                 <div class="hero-content">
                     <h1 class="reveal"><span class="name-prefix">Hello, I'm</span> <br><span
                             class="gradient-text">J.P.Dinith Harindra</span></h1>
-                    <p class="reveal">I'm a passionate <span class="highlight">Embedded Engineer</span> dedicated to
+                    <p class="reveal">I'm a passionate <span id="typing-text" class="highlight"></span> dedicated to
                         bridging the gap between software and hardware through innovative solutions.</p>
                     <div class="hero-btns reveal">
-                        <a href="My CV.pdf" class="btn btn-primary" download>Download CV</a>
+                        <a href="Dinith_CV.pdf" class="btn btn-primary" download>Download CV</a>
                         <a href="https://www.linkedin.com/in/dinith-harindra-07770a316" target="_blank"
                             class="btn btn-secondary">LinkedIn Profile</a>
                     </div>
@@ -158,23 +158,49 @@
                 <div class="projects-grid">
                     <div class="project-card reveal">
                         <div class="project-img">
-                            <img src="project-1.png" alt="Embedded Dashboard">
+                            <img src="shopping_cart.png" alt="Smart Shopping Cart System">
                         </div>
                         <div class="project-info">
-                            <span class="project-tag">Embedded Systems</span>
-                            <h3>Smart Energy Meter</h3>
-                            <p>A real-time energy monitoring system based on STM32 with LoRaWAN connectivity.</p>
+                            <span class="project-tag">Embedded Systems & IoT</span>
+                            <h3>Smart Shopping Cart System</h3>
+                            <p>An IoT-enabled shopping cart using UHF RFID, ESP32, and Firebase. Features QR-based
+                                payments and automated checkout to reduce queue times.</p>
                             <a href="#" class="project-link">View Details &rarr;</a>
                         </div>
                     </div>
                     <div class="project-card reveal">
                         <div class="project-img">
-                            <img src="project-2.png" alt="Robotics System">
+                            <img src="inventory.png" alt="Hotel Kitchen Inventory System">
                         </div>
                         <div class="project-info">
-                            <span class="project-tag">Robotics</span>
-                            <h3>Autonomous Rover</h3>
-                            <p>Obstacle avoiding rover using ROS and Raspberry Pi for complex path planning.</p>
+                            <span class="project-tag">Full-Stack & IoT</span>
+                            <h3>Hotel Kitchen Inventory System</h3>
+                            <p>Web-based system with ESP32 & Arduino to track ingredients, manage inventory, and monitor
+                                expiration dates using load cells for real-time sensing.</p>
+                            <a href="#" class="project-link">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="gas_leakage.png" alt="Gas Leakage and Monitoring System">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Embedded Safety Systems</span>
+                            <h3>Gas Leakage & Monitoring System</h3>
+                            <p>Real-time gas level and weight monitoring using ESP8266 and MQ2. Sends instant alerts via
+                                Blink app, email, and hardware alarms.</p>
+                            <a href="#" class="project-link">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="election_system.png" alt="Online Election System">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Web Development</span>
+                            <h3>Online Election System</h3>
+                            <p>A secure digital voting platform built with PHP and MySQL. Features voter authentication,
+                                real-time result viewing, and encrypted vote casting for high transparency.</p>
                             <a href="#" class="project-link">View Details &rarr;</a>
                         </div>
                     </div>
@@ -184,23 +210,24 @@
 
         <section id="research" class="section">
             <div class="container">
-                <h2 class="section-title reveal">Research & Publications</h2>
+                <h2 class="section-title reveal">Research Experience</h2>
                 <div class="research-container">
                     <div class="research-item reveal">
-                        <div class="research-date">2024</div>
-                        <div class="research-content">
-                            <h3>Optimization of Low-Power IoT Nodes</h3>
-                            <p>Published in IEEE Xplore. Research focus on reducing sleep current consumption in
-                                battery-operated nodes.</p>
-                            <a href="#" class="btn-text">View Paper</a>
-                        </div>
-                    </div>
-                    <div class="research-item reveal">
-                        <div class="research-date">2023</div>
-                        <div class="research-content">
-                            <h3>AI at the Edge: Performance Analysis</h3>
-                            <p>Comparative study of running lightweight ML models on ARM Cortex-M4 vs M7 processors.</p>
-                            <a href="#" class="btn-text">View Paper</a>
+                        <div class="research-date">2026 - Present</div>
+                        <div class="research-content" style="display: flex; gap: 2rem; align-items: start;">
+                            <div style="flex: 1;">
+                                <h3>Adaptive Robust Steganography Resilient to Aggressive JPEG Compression and Geometric
+                                    Scaling</h3>
+                                <p><strong>Final Year Research:</strong> Addressing the "robustness gap" in digital
+                                    image steganography on social media platforms. Implementation using DWT, SVD, and
+                                    Reed-Solomon error correction for reliable hidden communication.</p>
+                                <a href="#" class="btn-text">View Research Details</a>
+                            </div>
+                            <div
+                                style="flex: 0 0 250px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                <img src="steganography.png" alt="Steganography Research"
+                                    style="width: 100%; display: block;">
+                            </div>
                         </div>
                     </div>
                 </div>
