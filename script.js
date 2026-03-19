@@ -81,15 +81,21 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(type, 1000);
     }
 
-    // Card Flip Logic
-    const flipButtons = document.querySelectorAll('.flip-btn, .flip-btn-back');
+    // Flip Card Logic
+    const flipButtons = document.querySelectorAll('.btn-flip');
+    const backButtons = document.querySelectorAll('.btn-back');
+
     flipButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const card = btn.closest('.project-card') || btn.closest('.research-item');
-            if (card) {
-                card.classList.toggle('flipped');
-            }
+            const card = e.target.closest('.flip-card');
+            card.classList.add('flipped');
+        });
+    });
+
+    backButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.flip-card');
+            card.classList.remove('flipped');
         });
     });
 });

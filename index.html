@@ -158,116 +158,133 @@
                 <h2 class="section-title reveal">Featured Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-card-wrapper reveal">
-                        <div class="project-card">
-                            <div class="project-front">
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <div class="project-img">
                                     <img src="shopping_cart.png" alt="Smart Shopping Cart System">
                                 </div>
                                 <div class="project-info">
                                     <span class="project-tag">Embedded Systems & IoT</span>
                                     <h3>Smart Shopping Cart System</h3>
-                                    <p>An IoT-enabled shopping cart using UHF RFID, ESP32, and Firebase for automated
-                                        checkout.</p>
-                                    <button class="project-link flip-btn">View Details &rarr;</button>
+                                    <p>An IoT-enabled shopping cart using UHF RFID, ESP32, and Firebase. Features
+                                        QR-based payments and automated checkout.</p>
+                                    <button class="btn-flip">View Details &rarr;</button>
                                 </div>
                             </div>
-                            <div class="project-back">
-                                <div class="project-info">
-                                    <h3>Technical Details</h3>
+                            <div class="flip-card-back">
+                                <h3>Technical Details</h3>
+                                <div class="details-content">
                                     <p>This embedded system adopts a three-tier, client-server architecture with
-                                        IoT-enabled shopping carts. Used UHF RFID tags and reader, ESP32
-                                        microcontroller, Server controller lock, and Tab. The cart devices connect
-                                        directly to Firebase over Wi-Fi using Firebase's real-time database and cloud
-                                        functions. Otherwise this embedded system used QR-based payments, and security
-                                        verification to automate checkout.</p>
-                                    <button class="project-link flip-btn-back">&larr; Back</button>
+                                        IoT-enabled shopping carts.</p>
+                                    <ul>
+                                        <li>Hardware: UHF RFID tags/reader, ESP32 microcontroller, Server controller
+                                            lock.</li>
+                                        <li>Connectivity: Real-time Firebase integration over Wi-Fi for cloud functions.
+                                        </li>
+                                        <li>Security: Automated checkout with security verification and QR-based
+                                            payments.</li>
+                                    </ul>
                                 </div>
+                                <button class="btn-back">&larr; Back</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-card-wrapper reveal">
-                        <div class="project-card">
-                            <div class="project-front">
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <div class="project-img">
                                     <img src="inventory.png" alt="Hotel Kitchen Inventory System">
                                 </div>
                                 <div class="project-info">
                                     <span class="project-tag">Full-Stack & IoT</span>
                                     <h3>Hotel Kitchen Inventory System</h3>
-                                    <p>Web-based system with ESP32 & Arduino to track ingredients and monitor expiration
-                                        dates.</p>
-                                    <button class="project-link flip-btn">View Details &rarr;</button>
+                                    <p>Web-based system with ESP32 & Arduino to track ingredients, manage inventory, and
+                                        monitor expiration dates.</p>
+                                    <button class="btn-flip">View Details &rarr;</button>
                                 </div>
                             </div>
-                            <div class="project-back">
-                                <div class="project-info">
-                                    <h3>Technical Details</h3>
-                                    <p>Web base system to track ingredients, manage inventory, and monitoring expired
-                                        dates. Used ESP32 & Arduino to calculates weight and compares to preset limits
-                                        and a load cell to sensing it. Designed for high-scale hotel kitchen
-                                        environments with real-time alerting for stock levels.</p>
-                                    <button class="project-link flip-btn-back">&larr; Back</button>
+                            <div class="flip-card-back">
+                                <h3>Technical Details</h3>
+                                <div class="details-content">
+                                    <p>Web-based system to track ingredients, manage inventory, and monitor expiration
+                                        dates automatically.</p>
+                                    <ul>
+                                        <li>IoT: ESP32 & Arduino nodes for distributed sensing.</li>
+                                        <li>Sensors: Load cells and HX711 for precise weight measurement.</li>
+                                        <li>Logic: Real-time weight monitoring compared against preset safety limits.
+                                        </li>
+                                    </ul>
                                 </div>
+                                <button class="btn-back">&larr; Back</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-card-wrapper reveal">
-                        <div class="project-card">
-                            <div class="project-front">
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <div class="project-img">
                                     <img src="gas_leakage.png" alt="Gas Leakage and Monitoring System">
                                 </div>
                                 <div class="project-info">
                                     <span class="project-tag">Embedded Safety Systems</span>
                                     <h3>Gas Leakage & Monitoring System</h3>
-                                    <p>Real-time gas level and weight monitoring using ESP8266 and MQ2 for enhanced
-                                        safety.</p>
-                                    <button class="project-link flip-btn">View Details &rarr;</button>
+                                    <p>Real-time gas level and weight monitoring using ESP8266 and MQ2. Sends instant
+                                        alerts via Blink app and email.</p>
+                                    <button class="btn-flip">View Details &rarr;</button>
                                 </div>
                             </div>
-                            <div class="project-back">
-                                <div class="project-info">
-                                    <h3>Technical Details</h3>
-                                    <p>Developed gas leakage detection system using ESP8266, MQ2 sensor, and HX711 load
-                                        cell. This embedded system monitor gas levels and cylinder weight in real time,
-                                        sending instant alerts via Blynk app, email, buzzer, and LCD to enhance safety
-                                        and reduce gas wastage.</p>
-                                    <button class="project-link flip-btn-back">&larr; Back</button>
+                            <div class="flip-card-back">
+                                <h3>Technical Details</h3>
+                                <div class="details-content">
+                                    <p>Safety-critical embedded system for continuous gas monitoring and cylinder usage
+                                        tracking.</p>
+                                    <ul>
+                                        <li>Sensors: MQ2 gas sensor and HX711 load cell for comprehensive monitoring.
+                                        </li>
+                                        <li>Alerts: Real-time notifications via Blynk, Email, and local hardware
+                                            buzzer/LCD.</li>
+                                        <li>System: Designed to enhance safety and reduce gas wastage through precise
+                                            analytics.</li>
+                                    </ul>
                                 </div>
+                                <button class="btn-back">&larr; Back</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 4 -->
-                    <div class="project-card-wrapper reveal">
-                        <div class="project-card">
-                            <div class="project-front">
+                    <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <div class="project-img">
                                     <img src="election_system.png" alt="Online Election System">
                                 </div>
                                 <div class="project-info">
                                     <span class="project-tag">Web Development</span>
                                     <h3>Online Election System</h3>
-                                    <p>A secure digital voting platform built with PHP and MySQL for university
-                                        elections.</p>
-                                    <button class="project-link flip-btn">View Details &rarr;</button>
+                                    <p>A secure digital voting platform built with PHP and MySQL. Features voter
+                                        authentication and real-time result viewing.</p>
+                                    <button class="btn-flip">View Details &rarr;</button>
                                 </div>
                             </div>
-                            <div class="project-back">
-                                <div class="project-info">
-                                    <h3>Technical Details</h3>
-                                    <p>Developed an Online Election System as a university project to conduct secure and
-                                        efficient digital voting. The system allows user registration, voter
-                                        authentication, vote casting, and realtime result viewing. Designed to ensure
-                                        accuracy, transparency, and data security while reducing manual effort.
-                                        Technologies: HTML, CSS, JavaScript, PHP, MySQL.</p>
-                                    <button class="project-link flip-btn-back">&larr; Back</button>
+                            <div class="flip-card-back">
+                                <h3>Technical Details</h3>
+                                <div class="details-content">
+                                    <p>University project designed to conduct secure and efficient digital voting with
+                                        high accuracy and transparency.</p>
+                                    <ul>
+                                        <li>Stack: HTML5, CSS3, JavaScript, PHP, and MySQL.</li>
+                                        <li>Modules: Registration, Multi-factor Authentication, Secure Casting,
+                                            Real-time results.</li>
+                                        <li>Goal: Ensure data security while minimizing human manual effort/error.</li>
+                                    </ul>
                                 </div>
+                                <button class="btn-back">&larr; Back</button>
                             </div>
                         </div>
                     </div>
@@ -279,35 +296,40 @@
             <div class="container">
                 <h2 class="section-title reveal">Research Experience</h2>
                 <div class="research-container">
-                    <div class="research-item-wrapper reveal">
-                        <div class="research-item">
-                            <div class="research-front">
-                                <div class="research-date">2026 - Present</div>
-                                <div class="research-content-flex">
-                                    <div class="research-text">
-                                        <h3>Adaptive Robust Steganography Resilient to Aggressive JPEG Compression and
-                                            Geometric Scaling</h3>
-                                        <p>Addressing the "robustness gap" in digital image steganography on social
-                                            media platforms.</p>
-                                        <button class="btn-text flip-btn">View Research Details &rarr;</button>
-                                    </div>
-                                    <div class="research-img-box">
-                                        <img src="steganography.png" alt="Steganography Research">
+                    <div class="flip-card reveal research-wide">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="research-item">
+                                    <div class="research-date">2026 - Present</div>
+                                    <div class="research-content" style="display: flex; gap: 2rem; align-items: start;">
+                                        <div style="flex: 1;">
+                                            <h3>Adaptive Robust Steganography Resilient to Aggressive JPEG Compression
+                                                and Geometric Scaling</h3>
+                                            <p><strong>Final Year Research:</strong> Addressing the "robustness gap" in
+                                                digital image steganography on social media platforms.</p>
+                                            <button class="btn-flip">View Research Details &rarr;</button>
+                                        </div>
+                                        <div
+                                            style="flex: 0 0 250px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                                            <img src="steganography.png" alt="Steganography Research"
+                                                style="width: 100%; display: block;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="research-back">
-                                <div class="research-info">
-                                    <h3>Advanced Research Analysis</h3>
-                                    <p>Research looks at digital image steganography and highlights a common problem
-                                        known as the "robustness gap," where hidden data gets damaged or completely lost
-                                        because of heavy compression and resizing on social media platforms. To tackle
-                                        this issue, this review modern techniques and explains why a content-adaptive
-                                        approach works best. It uses methods like DWT, SVD, and Reed-Solomon error
-                                        correction to make the hidden communication more reliable and resistant to
-                                        distortion.</p>
-                                    <button class="btn-text flip-btn-back">&larr; Back</button>
+                            <div class="flip-card-back">
+                                <h3>Methodology & Results</h3>
+                                <div class="details-content">
+                                    <p>Research focus on preventing the loss of hidden data due to social media
+                                        algorithms (compression/resizing).</p>
+                                    <ul>
+                                        <li>Techniques: DCT, DWT (Discrete Wavelet Transform), and SVD.</li>
+                                        <li>Error Correction: Reed-Solomon coding for resilient communication.</li>
+                                        <li>Approach: Content-adaptive steganography for maximum embedding efficiency
+                                            and visual imperceptibility.</li>
+                                    </ul>
                                 </div>
+                                <button class="btn-back">&larr; Back</button>
                             </div>
                         </div>
                     </div>
