@@ -80,4 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typingText) {
         setTimeout(type, 1000);
     }
+
+    // Card Flip Logic
+    const flipButtons = document.querySelectorAll('.flip-btn, .flip-btn-back');
+    flipButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = btn.closest('.project-card') || btn.closest('.research-item');
+            if (card) {
+                card.classList.toggle('flipped');
+            }
+        });
+    });
 });
