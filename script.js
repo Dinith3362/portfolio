@@ -98,4 +98,34 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.remove('flipped');
         });
     });
+    // Hero Photo Scan Animation
+    const heroWrapper = document.querySelector('.scan-effect');
+    const heroPhoto = document.getElementById('hero-photo');
+    const bitsContainer = document.querySelector('.scan-bits');
+
+    if (heroWrapper && heroPhoto) {
+        // Trigger scan after a brief delay
+        setTimeout(() => {
+            heroWrapper.classList.add('active');
+
+            // Create falling bit particles
+            const createBits = setInterval(() => {
+                const bit = document.createElement('div');
+                bit.className = 'bit';
+                bit.style.left = Math.random() * 100 + '%';
+                bit.style.top = Math.random() * 100 + '%';
+                bit.style.animation = `bitFall ${Math.random() * 0.5 + 0.5}s linear forwards`;
+                bitsContainer.appendChild(bit);
+
+                // Cleanup bits
+                setTimeout(() => bit.remove(), 1000);
+            }, 50);
+
+            // After scan completes (3s), show full image
+            setTimeout(() => {
+                clearInterval(createBits);
+                heroPhoto.classList.add('scanned');
+            }, 3000);
+        }, 1500);
+    }
 });
