@@ -128,4 +128,52 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 3000);
         }, 1500);
     }
+    // Contact Form Submission
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = document.getElementById('form-submit-btn');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Set loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+            formStatus.className = 'form-status';
+            formStatus.innerHTML = '';
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.getAttribute('action'), {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formStatus.className = 'form-status success';
+                    formStatus.innerHTML = 'Message sent successfully! I will get back to you soon.';
+                    contactForm.reset();
+                } else {
+                    const data = await response.json();
+                    if (Object.prototype.hasOwnProperty.call(data, 'errors')) {
+                        formStatus.innerHTML = data['errors'].map(error => error['message']).join(', ');
+                    } else {
+                        formStatus.innerHTML = 'Oops! There was a problem submitting your form';
+                    }
+                    formStatus.className = 'form-status error';
+                }
+            } catch (error) {
+                formStatus.className = 'form-status error';
+                formStatus.innerHTML = 'Oops! There was a problem submitting your form';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Message';
+            }
+        });
+    }
 });

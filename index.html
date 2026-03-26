@@ -354,17 +354,18 @@
                 <div class="contact-card reveal">
                     <h2 class="section-title">Let's Work Together</h2>
                     <p>Have a project in mind? Let's talk about how I can help you bring it to life.</p>
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/xnjonnrk" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
                     </form>
                 </div>
             </div>
