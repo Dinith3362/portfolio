@@ -389,7 +389,8 @@ nav .container {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh; /* iOS Safari: dynamic viewport height, excludes address bar */
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -1086,10 +1087,17 @@ footer {
         font-size: 3.5rem;
     }
 
+    #hero {
+        /* Extra padding on mobile so photo clears the fixed blurry navbar */
+        padding-top: 110px;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .hero-content {
@@ -1102,8 +1110,9 @@ footer {
     }
 
     .image-wrapper {
-        width: 300px;
-        height: 380px;
+        width: 280px;
+        height: auto;          /* Let height be natural — no forced crop */
+        max-height: 360px;
         margin: 0 auto;
         overflow: hidden;
     }
