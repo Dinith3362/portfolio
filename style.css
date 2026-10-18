@@ -423,6 +423,7 @@ nav .container {
     /* Show the scanning bits outside the bounds if needed */
     border: none;
     box-shadow: none;
+    background: transparent;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -435,6 +436,7 @@ nav .container {
     height: 100%;
     object-fit: cover;
     object-position: top center;
+    mix-blend-mode: screen; /* Makes white/light PNG background invisible on dark site */
     filter: brightness(0) contrast(1.1) grayscale(1);
     transition: filter 1s ease-in-out;
 }
